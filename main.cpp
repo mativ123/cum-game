@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
                 if(cumcount >= autoCost)
                 {
                     ++autocumCount;
+                    cumcount -= autoCost;
                     std::cout << "autocum: " << autocumCount << '\n';
                 } else
                     std::cout << "you are too poor\n";
